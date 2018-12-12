@@ -1,0 +1,44 @@
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+ 
+
+  <h2 class="text-center text-primary">Sign Up</h2>
+
+  <hr>
+ 
+  <div class="form-group">
+   
+      <input type="text" class="form-control" placeholder="Username"  formControlName="username">
+  
+   </div>
+
+
+   <div class="form-group">
+   
+      <input type="password" class="form-control" placeholder="Password" formControlName="password">
+ 
+   </div>
+
+   <div class="form-group">
+   
+      <input type="password" class="form-control" placeholder="Confirm Password" formControlName="confirmPassword">
+ 
+   </div>
+<!-- <div class="form-group">
+  <label for="favoritevalue">What is your favorite value? </label>
+  <select class="form-control" name="" id="favoritevalue">
+    <option *ngFor="let value of valueFromHome" value="{{ value.id }}">{{ value.name }}</option>
+  </select>
+</div>
+  -->
+   <div class="form-group text-center">
+  
+      <button class="btn btn-success" type="submit">Register</button>
+    
+      <button class="btn btn-default" type="button" (click)="cancel()">Cancel</button>
+  
+   </div>
+
+ </form>
+
+ <p>{{ registerForm.value | json }}</p>
+ <p>{{ registerForm.status | json }}</p>

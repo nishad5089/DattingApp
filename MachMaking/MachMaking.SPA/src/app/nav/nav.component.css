@@ -1,0 +1,19 @@
+@media (min-width: 768px){
+.navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+}
+.dropdown-menu li {
+    cursor: pointer
+}
+.dropdown-toggle{
+    cursor: pointer;
+}
+img {
+    max-height: 50px;
+    border: 2px solid white;
+    display: inline;
+}
